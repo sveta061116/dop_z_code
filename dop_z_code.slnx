@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="dop_z_code.vcxproj" Id="d9f7b21b-8685-4492-bdbc-4c52b7e73c86" />
+</Solution>
