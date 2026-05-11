@@ -5,6 +5,7 @@
 #include <vector>
 #include <sstream> 
 #include <iomanip>
+#include <algorithm>
 using namespace std;
 
 void sum_spend_one(string* People, vector<vector<string>>& spendings, float* sum_one, int N, int size) {
@@ -15,7 +16,7 @@ void sum_spend_one(string* People, vector<vector<string>>& spendings, float* sum
 				sum += stof(spendings[line][1]);
 			}
 		}
-		sum_one[name] = sum;
+        sum_one[name] = sum;
 	}
 	
 }
