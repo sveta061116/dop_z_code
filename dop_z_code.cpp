@@ -5,6 +5,7 @@
 #include <vector>
 #include <sstream> 
 #include <iomanip>
+#include <algorithm>
 using namespace std;
 
 void sum_spend_one(string* People, vector<vector<string>>& spendings, float* sum_one, int N, int size) {
@@ -46,7 +47,7 @@ void substraction(float* sum_one, float* had_pay, int N, float* sub) {
 
 int main()
 {
-	string f = "data.txt"; // путь  к файлу с данными
+	string f = "data_2.txt"; 
 	ifstream file(f);
 	if (!file.is_open()) {
 		cerr << "Failed to open file: " << f << endl;
