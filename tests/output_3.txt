@@ -1,0 +1,20 @@
+Andrey 1000.0 725.0
+Boris 2000.0 725.0
+Vadim 0.0 725.0
+Daria 0.0 725.0
+Elena 0.0 725.0
+Fedor 3000.0 725.0
+Gleb 500.0 725.0
+Igor 0.0 725.0
+Julia 0.0 350.0
+Kirill 0.0 350.0
+
+Vadim 275.0 Andrey
+Vadim 450.0 Boris
+Daria 725.0 Boris
+Elena 100.0 Boris
+Elena 625.0 Fedor
+Gleb 225.0 Fedor
+Igor 725.0 Fedor
+Julia 350.0 Fedor
+Kirill 350.0 Fedor

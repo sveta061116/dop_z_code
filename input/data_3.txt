@@ -1,0 +1,5 @@
+10 Andrey Boris Vadim Daria Elena Fedor Gleb Igor Julia Kirill
+Andrey 1000
+Boris 2000
+Fedor 3000 / Julia, Kirill
+Gleb 500

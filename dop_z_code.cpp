@@ -47,7 +47,7 @@ void substraction(float* sum_one, float* had_pay, int N, float* sub) {
 
 int main()
 {
-	string f = "data_2.txt"; 
+	string f = "input/data_7.txt"; 
 	ifstream file(f);
 	if (!file.is_open()) {
 		cerr << "Failed to open file: " << f << endl;
@@ -107,25 +107,31 @@ int main()
     had_to_pay(People, spendings, had_pay, N, size);
     float* sub = new float[N]; 
     substraction(sum_one, had_pay, N, sub);
-    cout << fixed << setprecision(1);
-    
 
+    ofstream output("tests/output_7.txt");
+    if (!output.is_open()) {
+        cerr << "Failed to output file" << endl;
+        return 1;
+    }
+
+    output << fixed << setprecision(1);
+    
     for (int i = 0; i < N; i++) {
-        cout << People[i] << " "<< sum_one[i] << " " << had_pay[i] << endl;
+        output << People[i] << " "<< sum_one[i] << " " << had_pay[i] << endl;
     }
     float* balance = new float[N];
     for (int i = 0; i < N; i++) {
         balance[i] = sub[i];
     }
 
-    cout << endl;
+    output << endl;
 
     for (int i = 0; i < N; i++) {
         if (balance[i] < 0) {
             for (int j = 0; j < N; j++) {
                 if (balance[j] > 0) {
                     float transfer = min(-balance[i], balance[j]);
-                    cout << People[i] << " " << transfer << " " << People[j] << endl;
+                    output << People[i] << " " << transfer << " " << People[j] << endl;
                     balance[i] += transfer;
                     balance[j] -= transfer;
                     if (balance[i] >= 0) break;

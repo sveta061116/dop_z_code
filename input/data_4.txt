@@ -1,0 +1,4 @@
+12 A B C D E F G H I J K L
+A 1200 / B, C, D, E
+F 2400 / A
+G 100
